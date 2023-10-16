@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>DCN Blog</title> 
+  <style>
+/* Style for desktop screens */
+@media screen and (min-width: 768px) {
+    /* Add your desktop styles here */
+}
+
+/* Style for mobile screens */
+@media screen and (max-width: 767px) {
+    /* Add your mobile styles here */
+}
+
+body{ 
+  margin:0px;
+  background-color:black;
+}
+.head{
+  width:360px;
+  height:55px;
+  background-color:black;
+  z-index: 999;
+  position: fixed;
+}
+.favicon{
+  color:#00FF01;
+  font-size:40px;
+  margin-top:10px;
+  position:absolute;
+  margin-left:10px;
+}
+.username {
+  position:absolute;
+  margin-top:65px;
+  margin-left:48px;
+  font-size:30px; 
+  color:#00FF01;
+
+}
+.nameborder{
+  position: absolute;
+  width:360px;
+  height:100px;
+  margin-top:310px;
+  background-color:black;
+}
+.profilepic{
+  position:absolute;
+  width:200px;
+  height:200px;
+  border:2px solid #00FF01;
+  border-radius:50%;
+  margin-top:150px;
+  margin-left:80px;
+}
+.profileimg{
+  border: none;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+.coverpic{
+  width:360px;
+  height:250px;
+  background-color:transparent;
+  position:absolute;
+  margin-top:60px;
+}
+.coverimg{
+  width:360px;
+  height:250px;
+  position: absolute;
+  margin-top:0px;
+}
+.about{
+  width:340px;
+  height:500px;
+  border:none;
+  margin-left:10px;
+  margin-top:500px;
+  position: absolute ;
+}
+.description{
+  width:340px;
+  height:30px;
+  border:none;
+  margin-left:15px;
+  margin-top:450px;
+  position:absolute;
+  font-size:26px;
+  color:#00FF01;
+}
+.about-content{
+  margin-top:10px;
+  margin-left:10px;
+  color:#00FF01
+} 
+.about-content a{
+  color:#00FF01;
+}
+.menuButton{
+  color:#00FF01;
+  font-size:40px;
+  margin-left:310px;
+  margin-top:-2px;
+}
+.menu{
+  position:fixed;
+  width:0px;
+  height:590px;
+  background-color:black;
+  border:2px solid #00FF01;
+  margin-top:-925px;
+  margin-left:-20px;
+}
+.menu-content{
+  position:fixed;
+  color:#00FF01;
+  margin-top:30px;
+  margin-left:0px;
+  font-size:30px;
+  display: none;
+  }
+.menu-content a{
+  color:#00FF01;
+  text-decoration:none;
+}
+.page-line{
+  position: absolute ;
+  background-color:#00FF01;
+  width:358px;
+  height:1px;
+  margin-top:428px;
+  
+}
+</style> 
+ </head> 
+ <body> 
+  <div class="head"> <a href="#"> 
+    <div class="favicon">
+      DCN 
+    </div></a> 
+   <div class="menuButton" onclick="toggleMenu()">
+     ☰ 
+   </div> 
+  </div> 
+  <div class="nameborder"> 
+   <div class="username">
+     NADINA DAMSANA 
+   </div> 
+  </div> 
+  <div class="coverpic"> 
+   <img src="https://pranx.com/hacker/og.jpg" class="coverimg"> 
+  </div> 
+  <div class="profilepic"> 
+   <img src="https://cdn.statusqueen.com/dpimages/thumbnail/Attitude_dp_-1768.jpg" class="profileimg"> 
+  </div> 
+  <div class="page-line"></div> 
+  <div class="description">
+    Description : 
+  </div> 
+  <div class="about"> 
+   <div class="about-content">
+     Hi! I am Nadina Damsana. 
+    <br> I am genarating AI images and i genarated images uploading my social media accounts 
+    <br> 
+    <br> My social media accounts link ↓ 
+    <br> 
+    <br>click here 
+    <br> 
+    <br> <a href="https://www.facebook.com/profile.php?id=61551506392317&amp;mibextid=ZbWKwL">Facebook : </a> 
+    <br> 
+    <br> 
+    <br> <a href="https://tiktok.com/@nadina.damsana.x">TikTok</a> 
+    <br> 
+    <br> 
+    <br> <a href="https://instargram.com/@nadina.damsana.x">Instagram </a> 
+    <br> 
+    <br> 
+    <br> 
+    <br> <a href="https://www.snapchat.com/add/nadina_damsana?share_id=ghUJnbwoin4&amp;locale=en-US">Snapchat : </a> 
+    <br> 
+    <br> 
+    <br> <a href="https://www.youtube.com/@nadina.damsana.x">YouTube </a> 
+    <br> 
+    <br> 
+    <br> <a href="https://whatsapp.com/channel/0029Va8gz7c1CYoN6LjHmE3W">WhatsApp </a> 
+    <br> 
+    <br> Like and Follow my social media accounts 
+   </div> 
+   <div class="menu" id="menu"> <!--<a href='' class="menu-content" id="menuContent">Nadina</a>--> 
+    <ul id="menu-content" class="menu-content" type="none"> 
+     <li><a href="#">ex</a></li> 
+     <br> 
+     <li><a href="#">ex</a></li> 
+     <br> 
+     <li><a href="#">ex</a></li> 
+     <br> 
+     <li><a href="#">ex</a></li> 
+     <br> 
+    </ul> 
+   </div> 
+   <script>
+function toggleMenu() {
+     const menu = document.getElementById('menu');
+     const menuContent = document.getElementById('menuContent');
+     const menuitems = document.getElementById('menu-content');
+     
+     if(menu.style.width==="0px"){
+        menu.style.width="220px";
+        menuitems.style.display ="block";
+        }
+     else {
+       menu.style.width="0px";
+        if (menuitems.style.display==="block"){
+          menuitems.style.display="none";
+        }}}
+</script> 
+  </div> 
+ </body>
+</html>
